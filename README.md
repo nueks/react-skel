@@ -12,13 +12,13 @@ version: '3.5'
 services:
   app:
     image: node:12.13-alpine
-	container_name: app.dev
+    container_name: app.dev
   volumes:
     - .:/app
   working_dir: /app
   environment:
     - HOME=/app
-	- NODE_ENV=development
+    - NODE_ENV=development
 ```
 
 ```bash
